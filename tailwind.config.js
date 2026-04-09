@@ -11,22 +11,14 @@ module.exports = {
       mobile: { max: "720px" },
     },
     fontFamily: {
-      sans: [
-        "system-ui",
-        "Segoe UI",
-        "Roboto",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-      ],
-      serif: [
-        "Georgia",
-        "Times New Roman",
-        "Times",
-        "serif",
-      ],
+      sans: ["system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+      serif: ["Georgia", "Times New Roman", "Times", "serif"],
     },
     extend: {
+      colors: {
+        lime: "#C8FF00",
+        "off-black": "#111111",
+      },
       transitionDuration: {
         DEFAULT: "300ms",
       },
