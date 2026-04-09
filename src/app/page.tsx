@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
       <Navigation />
 
       <main>
-        {/* Hero */}
+        < Hero />
 
         {/* Product Carousel */}
 
