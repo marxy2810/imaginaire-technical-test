@@ -7,6 +7,7 @@ import Navigation from "@/components/Navigation";
 import ProductCarousel from "@/components/ProductCarousel";
 import ContentSection from "@/components/ContentSection";
 import NewsletterSection from "@/components/NewsletterSection";
+import Footer from "@/components/Footer";
 
 async function getProducts(): Promise<ShopifyProduct[]> {
   try {
@@ -35,7 +36,7 @@ export default async function Home() {
         <NewsletterSection />
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
