@@ -5,6 +5,8 @@ import type { ProductsQueryResult, ShopifyProduct } from "@/lib/types";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import ProductCarousel from "@/components/ProductCarousel";
+import ContentSection from "@/components/ContentSection";
+import NewsletterSection from "@/components/NewsletterSection";
 
 async function getProducts(): Promise<ShopifyProduct[]> {
   try {
@@ -28,13 +30,12 @@ export default async function Home() {
 
       <main>
         < Hero />
-
         < ProductCarousel products={products} /> 
-
-        {/* Text / Content Section */}
+        <ContentSection />
+        <NewsletterSection />
       </main>
 
-      {/* Footer */}
+      {/* <Footer /> */}
     </>
   );
 }
