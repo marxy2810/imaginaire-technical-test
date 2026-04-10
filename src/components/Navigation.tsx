@@ -18,10 +18,10 @@ function Logo() {
       viewBox="0 0 36 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="PTLOTO logo"
+      aria-label="FTLOTG logo"
     >
-      <circle cx="13" cy="11" r="10.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      <circle cx="23" cy="11" r="10.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <circle cx="13" cy="11" r="10.5" stroke="currentColor" strokeWidth="4" fill="none" />
+      <circle cx="23" cy="11" r="10.5" stroke="currentColor" strokeWidth="4" fill="none" />
     </svg>
   );
 }
@@ -31,7 +31,7 @@ export default function Navigation() {
 
   return (
     <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50">
-      <nav className="mx-auto px-6 h-12 flex items-center justify-between relative">
+      <nav className="mx-auto px-6 h-20 flex items-center justify-between relative">
 
         {/* Left: all four nav links (desktop only) */}
         <ul className="desktop:flex hidden gap-6 list-none m-0 p-0">

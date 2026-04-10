@@ -2,24 +2,24 @@ import Image from "next/image";
 
 export default function ContentSection() {
   return (
-    <section className="bg-lime w-full py-16 mobile:py-10">
-      <div className="max-w-[1440px] mx-auto px-6">
+    <section className="bg-lime-green w-full pt-16 pb-0 mobile:pt-10">
+      <div className="max-w-[80rem] mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl font-serif text-center text-off-black mb-10 mobile:text-2xl">
+        <h2 className="text-4xl text-center text-off-black mb-10 mobile:text-2xl">
           The latest drop
         </h2>
 
-        {/* Editorial card */}
-        <div className="relative mx-auto max-w-2xl bg-white overflow-hidden">
+        {/* Editorial card — overflows out of the green section */}
+        <div className="relative mx-auto max-w-4xl bg-white overflow-visible mb-[-6rem] tablet:mb-[-4rem] mobile:mb-[-3rem]">
           {/* Label top-left */}
-          <div className="absolute top-4 left-4 z-10">
-            <span className="text-sm font-sans text-off-black font-medium">Sanchez</span>
+          <div className="absolute top-6 left-6 z-10">
+            <span className="text-4xl text-off-black">Sanchez</span>
           </div>
 
           {/* Image */}
-          <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+          <div className="relative w-full rounded-md overflow-hidden" style={{ aspectRatio: "4/3" }}>
             <Image
-              src="/snowboard-2.jpg"
+              src="/content-snowboard.jpeg"
               alt="Sanchez snowboard in a mountain landscape"
               fill
               className="object-cover"
@@ -30,7 +30,7 @@ export default function ContentSection() {
           {/* Plus icon bottom-right */}
           <button
             aria-label="Learn more"
-            className="absolute bottom-4 right-4 w-8 h-8 flex items-center justify-center bg-white text-off-black text-xl leading-none supports-hover:hover:bg-off-black supports-hover:hover:text-white transition-colors"
+            className="absolute bottom-6 right-6 w-12 h-12 flex items-center justify-center text-off-black text-6xl leading-none supports-hover:hover:bg-off-black supports-hover:hover:text-white transition-colors"
           >
             +
           </button>

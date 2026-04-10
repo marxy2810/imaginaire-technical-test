@@ -8,31 +8,31 @@ function Logo() {
       xmlns="http://www.w3.org/2000/svg"
       aria-label="PTLOTO logo"
     >
-      <circle cx="13" cy="11" r="10.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      <circle cx="23" cy="11" r="10.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <circle cx="13" cy="11" r="10.5" stroke="currentColor" strokeWidth="3" fill="none" />
+      <circle cx="23" cy="11" r="10.5" stroke="currentColor" strokeWidth="3" fill="none" />
     </svg>
   );
 }
 
 export default function Footer() {
   return (
-    <footer className="bg-off-black text-white">
+    <footer className="bg-black text-white">
       {/* Top strip */}
-      <div className="border-b border-white/10 py-4">
-        <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-center gap-3">
-          <span className="text-xs text-white/60">For the love of the game.</span>
+      <div className="py-12">
+        <div className="max-w-[80rem] mx-auto px-6 flex items-center justify-center gap-3">
+          <span className="text-md text-white">For the love of the game.</span>
           <Logo />
-          <span className="text-xs text-white/60">For the love of the game.</span>
+          <span className="text-md text-white">For the love of the game.</span>
         </div>
       </div>
 
       {/* Main footer columns */}
-      <div className="max-w-[1440px] mx-auto px-6 py-10">
-        <div className="grid grid-cols-3 gap-8 mobile:grid-cols-1 mobile:gap-6">
+      <div className="max-w-[80rem] mx-auto px-6 py-10">
+        <div className="grid grid-cols-3 gap-8 mobile:grid-cols-1 mobile:gap-6 justify-items-center">
           {/* Column 1: Address */}
           <div>
-            <p className="text-sm font-semibold mb-3">FTLOTG Snowboards</p>
-            <address className="not-italic text-xs text-white/60 leading-relaxed">
+            <p className="text-md font-semibold mb-4">FTLOTG Snowboards</p>
+            <address className="not-italic text-md font-semibold leading-relaxed">
               1 Exeter Place
               <br />
               Nottingham
@@ -59,7 +59,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-xs text-white/60 supports-hover:hover:text-white transition-colors"
+                      className="text-md font-semibold supports-hover:hover:text-white transition-colors"
                     >
                       {link.label}
                     </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs text-white/60 supports-hover:hover:text-white transition-colors"
+                      className="text-md font-semibold supports-hover:hover:text-white transition-colors"
                     >
                       {link.label}
                     </a>
@@ -96,9 +96,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10 py-4">
+      <div className=" py-8">
         <div className="max-w-[1440px] mx-auto px-6 text-center">
-          <p className="text-xs text-white/40">Website by Imaginaire</p>
+          <p className="text-md font-semibold">Website by Imaginaire</p>
         </div>
       </div>
     </footer>

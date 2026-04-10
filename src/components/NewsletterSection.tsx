@@ -6,9 +6,9 @@ export default function NewsletterSection() {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="bg-white py-16 mobile:py-10">
-      <div className="max-w-[480px] mx-auto px-6 text-center">
-        <h2 className="text-xl font-sans font-semibold text-off-black mb-6">
+    <section className="bg-white pt-36 pb-16 tablet:pt-28 mobile:pt-24 mobile:pb-10">
+      <div className="max-w-[45rem] mx-auto px-6 text-center">
+        <h2 className="text-4xl text-off-black mb-6">
           Looking for inspiration?
         </h2>
         <form
@@ -23,11 +23,11 @@ export default function NewsletterSection() {
             value={email}
             onChange={e => setEmail(e.target.value)}
             required
-            className="w-full border-b border-gray-300 text-sm text-center py-2 outline-none placeholder:text-gray-400 focus:border-off-black transition-colors bg-transparent"
+            className="w-full border-b border-gray-300 text-md text-center py-2 outline-none placeholder:text-off-black focus:border-off-black transition-colors bg-transparent"
           />
           <button
             type="submit"
-            className="w-full bg-off-black text-white text-xs tracking-widest uppercase py-3.5 supports-hover:hover:bg-gray-800 transition-colors"
+            className="w-full bg-off-black text-white text-md font-semibold uppercase py-3.5 text-center rounded-[0.275rem] supports-hover:hover:bg-[#B9FF2F] supports-hover:hover:text-black transition-colors"
           >
             Sign up for the mailing list
           </button>

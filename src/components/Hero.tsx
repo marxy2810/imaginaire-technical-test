@@ -17,7 +17,7 @@ export default function Hero() {
       {/* CTA bottom-right */}
       <div className="absolute bottom-6 right-6 mobile:bottom-4 mobile:right-4">
         <button className="group flex items-center gap-2 text-white">
-          <span className="text-5xl leading-tight mobile:text-lg transition-opacity supports-hover:group-hover:opacity-70">
+          <span className="text-4xl leading-tight mobile:text-lg transition-opacity supports-hover:group-hover:opacity-70">
             Shop the latest
           </span>
           <svg

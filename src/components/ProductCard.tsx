@@ -103,7 +103,7 @@ export default function ProductCard({ product }: { product: ShopifyProduct }) {
               </div>
             </div>
           )}
-          <button className="w-full bg-off-black text-white text-xs py-2 supports-hover:hover:bg-gray-800 transition-colors">
+          <button className="w-full bg-off-black text-white text-xs py-2 supports-hover:hover:bg-[#B9FF2F] supports-hover:hover:text-black rounded-[0.275rem] transition-colors">
             Quick add
           </button>
         </div>
@@ -125,7 +125,7 @@ export default function ProductCard({ product }: { product: ShopifyProduct }) {
       {/* View Product button */}
       <a
         href={`/products/${product.handle}`}
-        className="mt-auto w-full bg-off-black text-white text-md font-semibold text-center py-2.5 supports-hover:hover:bg-[#B9FF2F] supports-hover:hover:text-black transition-colors rounded-sm"
+        className="mt-auto w-full bg-off-black text-white text-md font-semibold text-center py-2.5 supports-hover:hover:bg-[#B9FF2F] supports-hover:hover:text-black transition-colors rounded-[0.275rem]"
       >
         View Product
       </a>

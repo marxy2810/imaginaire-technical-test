@@ -15,3 +15,8 @@
 .bg-lime-green {
   background-color: #B9FF2F;
 }
+
+svg {
+  width: 4rem;
+  height: 4rem;
+}

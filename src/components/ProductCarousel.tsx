@@ -12,7 +12,7 @@ export default function ProductCarousel({ products }: { products: ShopifyProduct
       {/* Section header */}
       <div className="mx-auto px-6 flex items-end justify-between mb-6">
         <div>
-          <h2 className="text-5xl font-sans text-off-black leading-tight">
+          <h2 className="text-4xl font-sans text-off-black leading-tight">
             Snowboards
           </h2>
           <p className="text-xl text-gray-500 mt-0.5">
