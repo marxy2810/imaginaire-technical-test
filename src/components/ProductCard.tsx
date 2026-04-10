@@ -111,7 +111,7 @@ export default function ProductCard({ product }: { product: ShopifyProduct }) {
 
       {/* Product info */}
       <div className="flex items-start justify-between gap-2 mb-2">
-        <h3 className="text-sm font-sans text-off-black">{product.title}</h3>
+        <h3 className="text-lg font-sans text-off-black">{product.title}</h3>
         <div className="text-right shrink-0">
           {hasCompareAt && (
             <span className="text-xs text-gray-400 line-through block">
@@ -125,7 +125,7 @@ export default function ProductCard({ product }: { product: ShopifyProduct }) {
       {/* View Product button */}
       <a
         href={`/products/${product.handle}`}
-        className="mt-auto w-full bg-off-black text-white text-xs text-center py-2.5 supports-hover:hover:bg-gray-800 transition-colors"
+        className="mt-auto w-full bg-off-black text-white text-md font-semibold text-center py-2.5 supports-hover:hover:bg-[#B9FF2F] supports-hover:hover:text-black transition-colors rounded-sm"
       >
         View Product
       </a>

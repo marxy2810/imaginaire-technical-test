@@ -11,3 +11,7 @@
     @apply bg-white text-off-black font-sans antialiased;
   }
 }
+
+.bg-lime-green {
+  background-color: #B9FF2F;
+}

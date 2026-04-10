@@ -10,18 +10,18 @@ export default function ProductCarousel({ products }: { products: ShopifyProduct
   return (
     <section className="py-8">
       {/* Section header */}
-      <div className="max-w-[1440px] mx-auto px-6 flex items-end justify-between mb-6">
+      <div className="mx-auto px-6 flex items-end justify-between mb-6">
         <div>
-          <h2 className="text-xl font-sans font-semibold text-off-black leading-tight">
+          <h2 className="text-5xl font-sans text-off-black leading-tight">
             Snowboards
           </h2>
-          <p className="text-xs text-gray-500 mt-0.5">
+          <p className="text-xl text-gray-500 mt-0.5">
             See our latest snowboards, in stock and ready to ship UK wide
           </p>
         </div>
         <a
           href="/products"
-          className="text-xs text-off-black underline underline-offset-2 supports-hover:hover:text-gray-500 transition-colors whitespace-nowrap"
+          className="text-xl text-off-black supports-hover:hover:text-gray-500 supports-hover:hover:underline transition-colors whitespace-nowrap"
         >
           View more
         </a>
@@ -30,7 +30,7 @@ export default function ProductCarousel({ products }: { products: ShopifyProduct
       {/* Carousel track */}
       <div
         ref={sliderRef}
-        className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 pb-4"
+        className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 pb-4 m-[1rem]"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {products.map(product => (

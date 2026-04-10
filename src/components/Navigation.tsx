@@ -31,7 +31,7 @@ export default function Navigation() {
 
   return (
     <header className="w-full border-b border-gray-200 bg-white sticky top-0 z-50">
-      <nav className="max-w-[1440px] mx-auto px-6 h-12 flex items-center justify-between relative">
+      <nav className="mx-auto px-6 h-12 flex items-center justify-between relative">
 
         {/* Left: all four nav links (desktop only) */}
         <ul className="desktop:flex hidden gap-6 list-none m-0 p-0">
@@ -39,7 +39,7 @@ export default function Navigation() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-xs text-off-black supports-hover:hover:underline transition-colors"
+                className="text-base text-off-black supports-hover:hover:underline transition-colors"
               >
                 {link.label}
               </Link>
@@ -86,13 +86,13 @@ export default function Navigation() {
         <div className="flex items-center gap-4">
           <button
             aria-label="Search"
-            className="text-xs text-off-black supports-hover:hover:underline transition-colors"
+            className="text-base text-off-black supports-hover:hover:underline transition-colors"
           >
             Search
           </button>
           <button
             aria-label="Cart"
-            className="text-xs text-off-black supports-hover:hover:underline transition-colors"
+            className="text-base text-off-black supports-hover:hover:underline transition-colors"
           >
             Cart
           </button>
@@ -111,7 +111,7 @@ export default function Navigation() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-off-black"
+                className="text-base text-off-black"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
